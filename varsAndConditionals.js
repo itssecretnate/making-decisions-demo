@@ -29,7 +29,7 @@ if(coinLandsHeads === true) console.log("Witch King gets to run away.");
 else console.log("Witch King got stabbed in the face.");
 
 // Let Witch King attack until Eowyn has died.
-for(let i = 0; eowynHealth > 0; i++) {
+for(let i = 1; eowynHealth > 0; i++) { // Setting i to 1 to set this as the first attack.
     eowynHealth -= witchKingAttack;
     console.log(`Eowyn has ${eowynHealth} left. Witch King has attacked ${i} times.`);
     if(eowynHealth <= 0) console.log("Eowyn has died.");
